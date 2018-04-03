@@ -42,24 +42,30 @@ h6, .h6 {
 }
 
 /* Nav links */
-.blog-nav-item {
+.blog-nav li {
     position: relative;
     display: inline-block;
     padding: 10px;
     font-weight: 500;
     color: #cdddeb;
+    text-decoration: none;
+
 }
-.blog-nav-item:hover,
-.blog-nav-item:focus {
+.blog-nav li a,
+.blog-nav li a:hover {
     color: #fff;
     text-decoration: none;
 }
 
 /* Active state gets a caret at the bottom */
-.blog-nav .active {
+.blog-nav .active,
+.blog-nav .current_page_item
+{
     color: #fff;
 }
-.blog-nav .active:after {
+.blog-nav .active:after,
+.blog-nav .current_page_item:after
+{
     position: absolute;
     bottom: 0;
     left: 50%;
