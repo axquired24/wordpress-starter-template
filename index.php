@@ -11,6 +11,13 @@
             endwhile; endif;
             ?>
 
+            <nav>
+                <ul class="pager">
+                    <li><?php previous_posts_link( 'Previous' ); ?></li>
+                    <li><?php next_posts_link( 'Next' ); ?></li>
+                </ul>
+            </nav>
+
         </div><!-- /.blog-main -->
 
         <?php get_sidebar(); ?>
